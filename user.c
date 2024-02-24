@@ -2,6 +2,11 @@
 #include<sys/types.h>
 #include<stdio.h>
 #include<stdlib.h>
+// By Mindy Zheng
+
+// 1) Implement shared memory and test 
+
+
 
 int main(int argc, char** argv) {
 	int iter = atoi(argv[1]); 
