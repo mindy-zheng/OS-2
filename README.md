@@ -1,12 +1,10 @@
-# OS-1: Skeleton multiple processes 
+# OS-2: Adding Functionality to our System
 -----------------------------------
-This program enters a loop that runs as many times as the child processes specified by the user (-n). In each iteration, the program forks to create a child process. The user is passed a number of iterations also specified by the user (-t). Lastly, a counter keeps track of the number of running child processes. After all child processes has been created, the remaining will finish before termination. 
+This program builds off of our previous project with more specific additions to the command line and our children launching. First, we hvae a simulated system clock (ran by our program manually) present in our shared memory. Our project is kinda dependent on our system clock. It tells us the bound at which we call our children (randomly)), as long as how often we should launch a child process. Our process control block will give us extensive details about our processes such as what entries are occupied, not occupied, and the starting and ending time.  
 
 ## How to run: 
-This can only be ran from the oss. First, run the command: make or make all. 
-As an example, if you wanted to launch oss with 3 user processes but never allow more than 2 to be running simultaneously in addition to 5 iterations, then this would need to be entered in the terminal: 
-
-./oss -n 3 -s 2 -t 5 
+Run 'make'. 
+Make sure you include the arguments needed. For example: ./oss -n 6 -s 2 -t 100 -i 39999
 
 ## Problems During Testing: 
-There weren't any outstanding problems during testing. 
+None outstanding that I know of. 
